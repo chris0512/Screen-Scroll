@@ -8,6 +8,8 @@ Fetch the image by API:
 ```js
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
+let photosArray = [];
+
 async function getPhotos() {
     try {
         const response = await fetch(apiUrl);
