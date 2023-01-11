@@ -1,6 +1,6 @@
 # Screen-Scroll
 
-This side project load the images from Unsplash api [random-photo-api](https://unsplash.com/documentation#get-a-random-photo)
+### This side project load the images from Unsplash api [random-photo-api](https://unsplash.com/documentation#get-a-random-photo)
 
 ![api-png](unsplash-api.png)
 
@@ -42,4 +42,16 @@ function imageLoaded() {
     }
 }
 ```
-<br/>
+
+### The Webpage icon is get from [flaticon](https://www.flaticon.com/)
+```html
+<link rel='icon' type="image/png" href="./image/camera.png">
+```
+
+### The font style is get from [google font](https://fonts.google.com/specimen/Bebas+Neue/tester?preview.text=Scroll%20Screen&preview.text_type=custom&query=Bebas)
+```css
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body {
+    font-family: Bebas Neue, sans-serif;
+}
+```
