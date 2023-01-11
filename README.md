@@ -18,3 +18,28 @@ async function getPhotos() {
     }
 }
 ```
+<br/>
+
+When scrolling near the bottom of page and image is loaded, load more photos:
+```js
+
+window.addEventListener('scroll', () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 && ready) {
+        ready = false;
+        getPhotos();
+
+    }
+})
+```
+```js
+function imageLoaded() {
+    imagesLoaded++;
+    console.log(imagesLoaded);
+    if (imagesLoaded === totalImages) {
+        ready = true;
+        loader.hidden = true;
+        console.log('ready = ', ready);
+    }
+}
+```
+<br/>
