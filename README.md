@@ -57,3 +57,29 @@ body {
     font-family: Bebas Neue, sans-serif;
 }
 ```
+
+### Loading Animation is get from [loading.io](loading.io)
+```html
+<div class="loader" id="loader">
+        <img src="./image/loading.svg" alt="Loading">
+    </div>
+```
+```js
+const loader = document.getElementById('loader');
+
+function imageLoaded() {
+    imagesLoaded++;
+
+    if (imagesLoaded === totalImages) {
+        loader.hidden = true;
+    }
+}
+```
+```css
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+```
